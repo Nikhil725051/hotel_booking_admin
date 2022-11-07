@@ -4,6 +4,13 @@
 
     .right{
         flex: 5;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
     }
 
     .left{
