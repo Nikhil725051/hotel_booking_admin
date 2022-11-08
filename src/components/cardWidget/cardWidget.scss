@@ -1,23 +1,23 @@
 .card{
-    width: 20%;
+    flex: 1;
     border-radius: 5px;
     display: flex;
-    gap: 10px;
-    flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
     -webkit-box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
     -moz-box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
+    height: 110px;
 
-    .cardItem{
+    .cardLeft,.cardRight{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        text-transform: uppercase;
 
         .title{
             color: grey;
             font-weight: 600;
+            text-transform: uppercase;
         }
 
         .progress{
@@ -26,14 +26,18 @@
         }
 
         .icon{
-            background-color: rgba(128, 0, 128, 0.321);
+            align-self: flex-end;
             border-radius: 5px;
             padding: 2px;
         }
-    }
 
-    .quantity{
-        font-size: 20px;
+        .cardAction{
+            border-bottom: 1px solid grey;
+        }
+
+        .counter{
+            font-size: 20px;
+        }
     }
 }
 
