@@ -1,4 +1,6 @@
 import CardWidget from '../../components/cardWidget/CardWidget';
+import Chart from '../../components/chart/Chart';
+import FeaturedChart from '../../components/featuredChart/FeaturedChart';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar'
 import './home.scss';
@@ -15,6 +17,10 @@ export default function Home(){
                 <CardWidget type={"orders"}></CardWidget>
                 <CardWidget type={"earnings"}></CardWidget>
                 <CardWidget type={"balance"}></CardWidget>
+            </div>
+            <div className='charts'>
+                <FeaturedChart></FeaturedChart>
+                <Chart></Chart>
             </div>
         </div>
     </div>);
