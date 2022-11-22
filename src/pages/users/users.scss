@@ -1,0 +1,53 @@
+.users {
+    display: flex;
+    height: 100vh;
+
+    .right {
+        flex: 5;
+
+        .table {
+            margin: 20px;
+            box-shadow: 2px 1px 31px -11px rgba(0, 0, 0, 1);
+            -webkit-box-shadow: 2px 1px 31px -11px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 2px 1px 31px -11px rgba(0, 0, 0, 1);
+
+            .cellWithImg{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .cellImg{
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .cellWithStatus{
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .active{
+                color: green;
+                background-color: rgba(0, 128, 0, 0.185);
+            }
+            .passive{
+                color: crimson;
+                background-color: rgba(220, 20, 60, 0.304);
+            }
+            .pending{
+                color: goldenrod;
+                background-color: rgba(218, 165, 32, 0.226);
+            }
+
+        }
+    }
+
+    .left {
+        flex: 1;
+        border-right: 1px solid rgba(128, 128, 128, 0.255);
+
+    }
+}

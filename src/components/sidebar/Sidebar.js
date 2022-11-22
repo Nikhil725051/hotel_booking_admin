@@ -26,7 +26,7 @@ export default function Sidebar(){
              <span>Dashboard</span>
              </li>
              <p className='title'>Lists</p>
-             <Link style={{textDecoration: "none"}} to='/'>
+             <Link style={{textDecoration: "none"}} to='/users'>
              <li>
              <PersonOutlineOutlined className='icon'></PersonOutlineOutlined>
               <span>Users</span>

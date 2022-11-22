@@ -1,0 +1,36 @@
+.listWrapper{
+    box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 1px 31px -11px rgba(0,0,0,1);
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+
+    .title{
+        color: grey;
+        margin-top: 0;
+
+    }
+
+    .productImg{
+        object-fit: cover;
+       height: 35px;
+       width: 35px;
+       border-radius: 50%;
+    }
+
+    .approved, .pending{
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .approved{
+        color: green;
+        background-color: rgba(0, 128, 0, 0.286);
+    }
+
+    .pending{
+        color: goldenrod;
+        background-color: rgba(218, 165, 32, 0.325);
+    }
+}
