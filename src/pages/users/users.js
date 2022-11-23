@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/Navbar';
 import './users.scss';
 
 import { DataGrid } from '@mui/x-data-grid';
+import { Cancel, Check } from '@mui/icons-material';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -39,6 +40,16 @@ const columns = [
       );
     }
   },
+  { 
+    field: 'actions', 
+    headerName: 'Action', 
+    width: 230,
+    renderCell: (params) => {
+      return(<div className='actions'>
+        <span className='action view'>View</span>
+        <span className='action delete'>Delete</span>
+      </div>);
+    }},
 ];
 
 const rows = [
@@ -135,12 +146,12 @@ export default function Users(){
         </div>
         <div className='right'>
             <Navbar></Navbar>
-            <div className='table' style={{ height: 400}}>
+            <div className='table' style={{ height: 650}}>
       <DataGrid
         rows={rows}
         columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={10}
+        rowsPerPageOptions={[10]}
         checkboxSelection
       />
     </div>
