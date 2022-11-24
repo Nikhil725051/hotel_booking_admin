@@ -26,8 +26,8 @@ export default function Single(){
             </div>
             <span className='edit'>Edit</span>
            </div>
-
-            <Chart></Chart>
+             <Chart></Chart>
+           
         </div>
         <div className='bottom'>
         <List></List>
