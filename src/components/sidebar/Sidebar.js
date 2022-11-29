@@ -92,8 +92,8 @@ export default function Sidebar(){
          </ul>
        </div>
         <div className='bottom'>
-          <button className='themeBtn dark'></button>
-          <button className='themeBtn light'></button>
+          <button className='themeBtn darkBtn'></button>
+          <button className='themeBtn lightBtn'></button>
         </div>
     </div>);
 }

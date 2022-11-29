@@ -4,8 +4,10 @@ import Users from './pages/users/users';
 import Single from './pages/single/single';
 import New from './pages/new/new';
 import { productInput, userInput } from './formSource';
+import './style/dark.scss';
+
 function App() {
-  return (<div>
+  return (<div className='dark'>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
